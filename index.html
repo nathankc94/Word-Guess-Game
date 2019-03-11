@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hangman</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css" />
+    
+</head>
+
+
+
+<body>
+    <!-- Header -->
+    <header class="container">
+        <h class="row">HANGMAN</h>
+        <h2 id="skc">Sporting Kansas City</h2>
+
+    </header> <!-- close header -->
+
+    <!-- main Content -->
+    <main class="container">
+        <div class="row">
+
+            <div class="col-md-2"></div>
+
+            <div class="col-md-4">
+                <img src="assets/images/AP19053104628559-1.jpg" alt="sporitng kc 2">
+                <img src="assets/images/usa_today_10857373.0.jpg" alt="sporting kc">
+
+            </div> <!-- close left content -->
+
+            <div class="col-md-4">
+                <h1>Can you guess the players name?</h1>
+                <p>Press any key to get started!</p>
+                <p>Wins:</p>
+                <p id="totalWins"></p>
+                <p>Current Word</p>
+                <p id="currentWord">______</p>
+                <p>Guesses Remaining:</p>
+                <p id="remainingGuesses"></p>
+                <p>Letters Guessed:</p>
+                <p id="guessedLetters"></p>
+            </div>
+            <!--close right content  -->
+
+            <div class="col-md-2"></div>
+
+        </div> <!-- close content row -->
+    </main> <!-- close main content -->
+ 
+
+    <footer class="footer">
+        <div class="two-toned-footer-color"></div>
+        <p class="text-muted text-muted-footer text-center">
+            &copy; Copyright Alongkot Sriprom
+        </p>
+    </footer>
+    <embed name="lostmojo" src="US Soccer Chants - _I Believe That We Will Win!_.mp3" width= "150"  height="90" loop="true" autostart="true">
+
+    <script src="assets/javascript/game.js" type="text/javascript">
+        resetGame ();
+        updateDisplay ();
+
+    </script>
+
+</body>
+
+</html>
